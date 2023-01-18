@@ -11,16 +11,16 @@
     <div class="header">
         <h2>Todo List</h2>
         <input type="text" id="input" placeholder="Digite uma fruta">
-        <input type="submit" value="Adicionar" onclick="fruta()" class="addBtn">
+        <input type="submit" value="Adicionar" onclick="cadastrarItem()" class="addBtn">
     </div>
 
-    <ul class="list">
-        <li class="checked">Banana</li>
-        <li >Maça</li>
-        <li >Uva</li>
-        <li >Laranja</li>
-        <li class="checked">Mexerica</li>
-        <li >Pessego</li>
+    <ul id="list">
+        <li class="checked">Banana <input type="reset" value="X" onclick=" deleteItem(this)"></li>
+        <li >Maça <input type="reset" value="X" onclick=" deleteItem(this)"></li>
+        <li >Uva <input type="reset" value="X" onclick=" deleteItem(this)"></li>
+        <li >Laranja <input type="reset" value="X" onclick=" deleteItem(this)"></li>
+        <li>Mexerica <input type="reset" value="X" onclick=" deleteItem(this)"></li>
+        <li >Pessego <input type="reset" value="X" onclick=" deleteItem(this)"></li>
     </ul>
 </body>
 
